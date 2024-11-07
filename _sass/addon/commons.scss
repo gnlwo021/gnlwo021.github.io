@@ -711,7 +711,7 @@ $btn-mb: 0.5rem;
 
   a {
     @extend %sidebar-links;
-    color: #fff; // 2024-11-07 임의로 추가
+    color: #ffffff; // 2024-11-07 임의로 추가
   }
 
   #avatar {
@@ -753,7 +753,7 @@ $btn-mb: 0.5rem;
     margin-bottom: 0.5rem;
     width: fit-content;
     // color: var(--site-title-color);
-    color: #fff;
+    color: #ffffff;
     // 2024-11-07 임의로 추가
     &:hover {
       color: rgba(223, 233, 241, 0.64);
