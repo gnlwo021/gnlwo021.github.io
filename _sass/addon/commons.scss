@@ -689,6 +689,9 @@ $btn-mb: 0.5rem;
   overflow-y: auto;
   width: $sidebar-width;
   background: var(--sidebar-bg);
+  background-image: url('/assets/img/sidebar_bg_img.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
   border-right: 1px solid var(--sidebar-border-color);
 
   /* Hide scrollbar for IE, Edge and Firefox */
@@ -708,6 +711,7 @@ $btn-mb: 0.5rem;
 
   a {
     @extend %sidebar-links;
+    color: #fff; // 2024-11-07 임의로 추가
   }
 
   #avatar {
@@ -748,7 +752,12 @@ $btn-mb: 0.5rem;
     margin-top: 1.25rem;
     margin-bottom: 0.5rem;
     width: fit-content;
-    color: var(--site-title-color);
+    // color: var(--site-title-color);
+    color: #fff;
+    // 2024-11-07 임의로 추가
+    &:hover {
+      color: rgba(223, 233, 241, 0.64);
+    }
   }
 
   .site-subtitle {
@@ -813,8 +822,9 @@ $btn-mb: 0.5rem;
   }
 
   .sidebar-bottom {
-    padding-left: 2rem;
-    padding-right: 1rem;
+    justify-content: center; // 임의로 추가
+    // padding-left: 2rem; // 임의로 변경
+    // padding-right: 1rem; // 임의로 변경
     margin-bottom: 1.5rem;
 
     $btn-size: 1.75rem;
@@ -1005,6 +1015,7 @@ search {
   padding: 0.18rem 0.3rem;
   color: var(--text-color);
   height: auto;
+  font-size: 13.5px;
 
   &:focus {
     box-shadow: none;
@@ -1511,7 +1522,7 @@ search {
     }
 
     .sidebar-bottom {
-      padding-left: 2.75rem;
+      // padding-left: 2.75rem; // 임의로 변경
       margin-bottom: 1.75rem;
 
       a:not(:last-child) {
