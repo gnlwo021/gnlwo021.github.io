@@ -711,7 +711,10 @@ $btn-mb: 0.5rem;
 
   a {
     @extend %sidebar-links;
-    color: #ffffff; /* 2024-11-07 임의로 추가 */
+
+    /* 2024-11-07 임의로 추가 */
+    
+    color: #ffffff; 
   }
 
   #avatar {
@@ -752,9 +755,13 @@ $btn-mb: 0.5rem;
     margin-top: 1.25rem;
     margin-bottom: 0.5rem;
     width: fit-content;
+
     /* color: var(--site-title-color); */
+
     color: #ffffff;
+
     /* 2024-11-07 임의로 추가 */
+
     &:hover {
       color: rgba(223, 233, 241, 0.64);
     }
@@ -822,9 +829,18 @@ $btn-mb: 0.5rem;
   }
 
   .sidebar-bottom {
-    justify-content: center;/* 임의로 추가 */
-    /* padding-left: 2rem; */ /* 임의로 변경 */
-    /* padding-right: 1rem; */ /* 임의로 변경 */
+
+    /* 임의로 추가 */
+
+    justify-content: center;
+
+    /* 임의로 변경 */
+
+    /* padding-left: 2rem; */ 
+
+    /* 임의로 변경 */
+
+    /* padding-right: 1rem; */ 
     margin-bottom: 1.5rem;
 
     $btn-size: 1.75rem;
@@ -1522,7 +1538,9 @@ search {
     }
 
     .sidebar-bottom {
-      /* padding-left: 2.75rem; */ /* 임의로 변경 */
+
+      /* padding-left: 2.75rem; */
+      
       margin-bottom: 1.75rem;
 
       a:not(:last-child) {
