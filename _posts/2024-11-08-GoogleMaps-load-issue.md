@@ -10,7 +10,7 @@ comments: true
 
 ## 문제 발생
 ---
-![google Maps error1](/assets/img/google_maps_error1.png)
+![google Maps error1](/assets/img/googleMaps-load-issue-img/google_maps_error1.png)
 ```javascript
   return (
     <LoadScript googleMapsApiKey="YOUR_API_KEY"> {/* API 키 입력 */}
@@ -70,6 +70,6 @@ please see https://goo.gle/js-api-loading
 <blockquote class="prompt-tip"><code class="highlighter-rouge">useLoadScript()</code>훅을 사용할 때는 <strong>Google Maps API가 제대로 로드될 때 까지 기다린 후 처리</strong>를 해야하기 때문에 조건문을 사용해 API가 로드된 후 로직이 실행되도록 설정했습니다.</blockquote>
 
 ## 결과
-![google Maps error2](/assets/img/google_maps_error2.png)
+![google Maps error2](/assets/img/googleMaps-load-issue-img/google_maps_error2.png)
 
 `useLoadScript()`함수를 사용하니 Google Maps가 정상적으로 로드가 되었습니다!

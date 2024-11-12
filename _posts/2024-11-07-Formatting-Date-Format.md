@@ -21,7 +21,7 @@ GitHub 블로그를 운영하다보면 언제 발행되었는지를 알 수 있�
 ## 날짜 형식 포맷팅
 ---
 `jekyll`기반의 블로그라면 `Nov 8, 2024`처럼 기본으로 제공되는 날짜 형식으로 보이실 겁니다.
-![날짜포맷팅1](/assets/img/날짜포맷팅1.png)
+![날짜포맷팅1](/assets/img/formatting-Date-Format-img/날짜포맷팅1.png)
 `Nov 8, 2024`의 날짜 형식을 `YYYY-mm-dd`형식으로 변경해 보겠습니다.
 
 지금 사용하는 언어의 파일로 이동해 코드 몇줄만 바꿔주시면 됩니다. 
@@ -50,9 +50,9 @@ jekyll serve
 
 home과 post부분의 날짜 형식이 바뀐것을 볼 수 있습니다.
 - post
-![날짜포맷팅2](/assets/img/날짜포맷팅2.png)
+![날짜포맷팅2](/assets/img/formatting-Date-Format-img/날짜포맷팅2.png)
 - home
-![날짜포맷팅3](/assets/img/날짜포맷팅3.png)
+![날짜포맷팅3](/assets/img/formatting-Date-Format-img/날짜포맷팅3.png)
 
 ## 마무리
 ---

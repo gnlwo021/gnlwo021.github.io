@@ -25,19 +25,19 @@ GitHub 블로그에서 사용할 수 있는 댓글 종류는 **`disqus`**, **`ut
 
 ### Utterances 설치
 GitHub App에서 [Utterances](https://github.com/apps/utterances)를 설치해야합니다. [Utterances](https://github.com/apps/utterances)로 접속해서 install 버튼 클릭을 누릅니다.
-![Utterances 사진2](/assets/img/Utterances설치2.png)
+![Utterances 사진2](/assets/img/comment-function-img/Utterances설치2.png)
 <blockquote class="prompt-tip">이미 설치가 된 경우 Configure으로 표시되지만 설치가 되지 않은 경우는 install이 표시됩니다.</blockquote>
 
 이후 install 버튼을 클릭하면 Repository를 선택하는 부분이 나옵니다. `Only select repositories`를 체크하고 `Select repositories`에서 github 블로그를 선택한 후 Install을 클릭합니다.
-<img src="/assets/img/Utterances설치3.png" alt="Utterances 사진3" width="400">
+<img src="/assets/img/comment-function-img/Utterances설치3.png" alt="Utterances 사진3" width="400">
 
 다음단계로 넘어오면 `utterances`를 설정하는 화면이 보이실텐데 이 부분은 `jekyll-theme-chirpy`를 적용하면 댓글을 설정하는 파일이 이미 있기때문에 생략합니다.
-![Utterances](/assets/img/Utterances.png)
+![Utterances](/assets/img/comment-function-img/Utterances.png)
 
 ### Issues 활성화
 `utterances`를 사용하기 위해서는 Issues를 활성화 해야합니다.
 본인의 github.io repository로 이동 후 `Settings` → `General`탭에서 스크롤하여 밑으로 내리면 Features가 보이실텐데 Issues를 체크하여 활성화합니다.
-![Issues](/assets/img/Issues.png)
+![Issues](/assets/img/comment-function-img/Issues.png)
 
 ### _config.yml 설정
 `_config.yml`파일로 이동 후 `ctrl+f`로 comments를 입력하여 comments로 이동합니다. 이후 아래 코드처럼 입력합니다.
@@ -73,18 +73,18 @@ comments: true
 <blockquote class="prompt-tip">댓글을 비활성화 하고싶다면 false로 설정해주면 됩니다.</blockquote>
 
 로컬서버를 켜서 댓글 활성화가 되어있는지 확인합니다.
-![comment](/assets/img/comment.png)
+![comment](/assets/img/comment-function-img/comment.png)
 
 댓글을 추가하면 github repository의 `Issues`탭에 보면 댓글이 추가된 것을 확인할 수 있습니다.
-![댓글지우기3](/assets/img/댓글지우기3.png)
+![댓글지우기3](/assets/img/comment-function-img/댓글지우기3.png)
 
 ## 댓글을 지워보자
 ---
 댓글을 지우는 방법은 매우 간단합니다. github repository의 `Issues`탭으로 이동하여 댓글이 달린 포스팅으로 이동합니다.
-![댓글지우기1](/assets/img/댓글지우기1.png)
+![댓글지우기1](/assets/img/comment-function-img/댓글지우기1.png)
 
 지우고 싶은 댓글에 Delete를 클릭하여 삭제합니다.
-![댓글지우기2](/assets/img/댓글지우기2.png)
+![댓글지우기2](/assets/img/comment-function-img/댓글지우기2.png)
 댓글 삭제에 성공하면 댓글 기능은 성공적으로 추가되었습니다!
 
 ## 마무리
