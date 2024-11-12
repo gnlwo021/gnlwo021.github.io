@@ -21,12 +21,12 @@ GitHub 블로그에서 사용할 수 있는 댓글 종류는 **`disqus`**, **`ut
 하지만 `Disqus`는 무료 버전을 사용하면 광고가 붙어 사용하기 불편하고 로딩도 꽤나 느리다고 합니다.
 
 그래서 저는 GitHub 이슈를 기반으로 쉽게 댓글을 관리할 수 있는 **`utterances`**를 사용했습니다. 
-> `utterances`는 Issues에서 댓글 알람 설정도 가능해서 편리합니다.
+<blockquote class="prompt-tip"><code class="highlighter-rouge">utterances</code>는 Issues에서 댓글 알람 설정도 가능해서 편리합니다.</blockquote>
 
 ### Utterances 설치
 GitHub App에서 [Utterances](https://github.com/apps/utterances)를 설치해야합니다. [Utterances](https://github.com/apps/utterances)로 접속해서 install 버튼 클릭을 누릅니다.
 ![Utterances 사진2](/assets/img/Utterances설치2.png)
-> 이미 설치가 된 경우 Configure으로 표시되지만 설치가 되지 않은 경우는 install이 표시됩니다.
+<blockquote class="prompt-tip">이미 설치가 된 경우 Configure으로 표시되지만 설치가 되지 않은 경우는 install이 표시됩니다.</blockquote>
 
 이후 install 버튼을 클릭하면 Repository를 선택하는 부분이 나옵니다. `Only select repositories`를 체크하고 `Select repositories`에서 github 블로그를 선택한 후 Install을 클릭합니다.
 <img src="/assets/img/Utterances설치3.png" alt="Utterances 사진3" width="400">
@@ -70,7 +70,7 @@ github 블로그를 사용하는 사용자라면 모두 알다시피 포스트�
 comments: true
 ---
 ```
-> 댓글을 비활성화 하고싶다면 false로 설정해주면 됩니다.
+<blockquote class="prompt-tip">댓글을 비활성화 하고싶다면 false로 설정해주면 됩니다.</blockquote>
 
 로컬서버를 켜서 댓글 활성화가 되어있는지 확인합니다.
 ![comment](/assets/img/comment.png)

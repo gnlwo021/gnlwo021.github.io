@@ -98,7 +98,9 @@
           ]
         }
       ],
-      "media-feature-range-notation": "prefix"
+      "media-feature-range-notation": "prefix",
+      "scss/dollar-variable-pattern": "^--",
+      "selector-class-pattern": null
     }
   },
   "release": {

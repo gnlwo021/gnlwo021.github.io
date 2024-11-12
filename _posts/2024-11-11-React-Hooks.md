@@ -26,7 +26,7 @@ const [arr, setArr] = useState([]);
 const [obj, setObj] = useState({});
 ```
 `useEffect`: 컴포넌트가 **<font color='#1E90FF'>렌더링된 이후에 부수 효과를 처리</font>**할 때 사용합니다.
-> 부수 효과란? **API 호출, 이벤트 리스너 등록, 타이머 설정** 등과 같은 컴포넌트 외부와의 상호작용으로 발생하는 기능을 말합니다.
+<blockquote class="prompt-tip">부수 효과란? <strong>API 호출, 이벤트 리스너 등록, 타이머 설정</strong>등과 같은 컴포넌트 외부와의 상호작용으로 발생하는 기능을 말합니다.</blockquote>
 
 ```javascript
 useEffect(() => {
@@ -64,7 +64,8 @@ export default function App() {
   return <div>Data: {data ? JSON.stringify(data) : "Loading..."}</div>;
 };
 ```
-> `axios`는 리액트 라이브러리로, **비동기 HTTP(GET, POST, PUT, DELETE)** 요청을 할 수 있도록 도와주는 기능을 합니다.
+<blockquote class="prompt-tip"><code class="highlighter-rouge">axios</code>는 리액트 라이브러리로 
+<strong>비동기 HTTP(GET, POST, PUT, DELETE)</strong>요청을 할 수 있도록 도와주는 기능을 합니다.</blockquote>
 
 #### 특정 의존성 변경 시마다 실행하기
 이 경우는 의존성 배열 특정 상태를 추가하여, 이 값이 변경될 때마다 `useEffect`가 실행되도록 합니다. 즉, 의존성이 변경될 때마다 API 요청을 새로 보낸다는 뜻입니다.
@@ -115,7 +116,7 @@ export default function App() {
   ...
 };
 ```
-> `axios.CancelToken`는 API 요청을 취소하는 함수입니다.
+<blockquote class="prompt-tip"><code class="highlighter-rouge">axios.CancelToken</code>는 API 요청을 취소하는 함수입니다.</blockquote>
 
 #### 주기적으로 데이터 갱신하기
 타이머를 설정하여 일정 시간마다 API 요청을 보낸 후 데이터를 갱신하고 `useEffect`의 정리 작업으로 타이머를 제거합니다.
@@ -170,7 +171,7 @@ export default function App({ state }) {
 ### 📌성능 최적화 Hook
 ---
 `useMemo`: 값이 변경되지 않으면 **<font color='#1E90FF'>이전 계산 결과를 재사용</font>**하여 불필요한 연산을 방지합니다. 주로 무거운 계산이나 필터링, 정렬 등의 작업에서 사용됩니다.
-> ❗`useMemo`는 **값**을 메모이제이션 합니다.
+<blockquote class="prompt-danger"><code class="highlighter-rouge">useMemo</code>는 <strong>값</strong>을 메모이제이션 합니다.</blockquote>
 
 ```javascript
 const memoizedValue = useMemo(() => {
@@ -189,7 +190,7 @@ return (
 - `useMemo`는 계산 함수 `() => { const sum = x + y; return { sum }; }`을 실행하여 결과 값을 반환하고, `memoizedValue`가 그 값을 참조하게 됩니다.
 
 `useCallback`: 메모이제이션된 콜백 함수를 반환하여, 컴포넌트가 리렌더링될 때 **<font color='#1E90FF'>동일한 함수를 유지</font>**하도록 합니다. 주로 자식 컴포넌트에 콜백을 전달할 때 사용합니다.
-> ❗`useCallback`은 **함수 자체**를 메모이제이션 합니다.
+<blockquote class="prompt-danger"><code class="highlighter-rouge">useCallback</code>은 <strong>함수 자체</strong>를 메모이제이션 합니다.</blockquote>
 
 ```javascript
 const memoizedFunction = useCallback(() => {
@@ -233,7 +234,7 @@ useImperativeHandle(ref, () => ({
 ```
 ### 📌고급 Hook
 `useReducer`: **<font color='#1E90FF'>간단한 상태 관리</font>**가 필요할 때 사용합니다. 상태와 상태를 변경하는 로직을 분리하여 작성할 수 있으며, `Redux`와 유사한 패턴으로 사용할 수 있습니다.
-> `Redux`는 자바스크립트 애플리케이션의 상태를 관리하기 위한 라이브러리로, `Store`라는 저장소에 애플리케이션 전체의 상태를 저장하고, 이 상태를 여러 컴포넌트에서 공유하고 관리할 수 있는 기능이 있습니다. 보통 복잡한 상태 관리가 필요할 때는 `Redux`, 간단한 상태 관리가 필요할 때는 `useReducer`를 사용합니다.
+<blockquote class="prompt-tip"> <code class="highlighter-rouge">Redux</code>는 자바스크립트 애플리케이션의 상태를 관리하기 위한 라이브러리로, <code class="highlighter-rouge">Store</code>라는 저장소에 애플리케이션 전체의 상태를 저장하고, 이 상태를 여러 컴포넌트에서 공유하고 관리할 수 있는 기능이 있습니다. 보통 복잡한 상태 관리가 필요할 때는 <code class="highlighter-rouge">Redux</code>, 간단한 상태 관리가 필요할 때는 <code class="highlighter-rouge">useReducer</code>를 사용합니다.</blockquote>
 
 ```javascript
 const [state, dispatch] = useReducer(reducer, initialState);
@@ -291,7 +292,7 @@ export default function App() {
 };
 ```
 `useParams`: 동적 경로에서 **<font color='#1E90FF'>URL에 포함된 파라미터 값을 추출</font>**합니다. 동적으로 사용자나 게시물 ID를 받는 페이지에서 해당 ID를 쉽게 가져올 수 있습니다.
-> 만약, URL이 `/user/123`이라면 `userId`는 `123`이 됩니다.
+<blockquote class="prompt-tip">만약, URL이 <code class="highlighter-rouge">/user/123</code>이라면 <code class="highlighter-rouge">userId</code>는 <code class="highlighter-rouge">123</code>이 됩니다.</blockquote>
 
 ```javascript
 import { useParams } from 'react-router-dom';
@@ -310,13 +311,13 @@ export default function App() {
   const match = useMatch('/home'); // '/home' 경로와 일치 여부 확인
 
   return (
-    <div style={{ color: match ? '#000' : '#fff' }}>
+    <div>
       {match ? 'Home Page' : 'Not on Home Page'}
     </div>
   );
 };
 ```
 
-## 마무리
+## 리액트 기초 시리즈
 ---
-이 밖에도 더 많은 리액트의 Hook들이 있으니 상황에 맞는 Hook를 적절히 사용하면 컴포넌트를 더 깔끔하고 효율적으로 관리할 수 있습니다. 
+[[React] 리액트 유틸리티 메서드](https://gnlwo021.github.io/posts/%EB%A6%AC%EC%95%A1%ED%8A%B8_%EC%9C%A0%ED%8B%B8%EB%A6%AC%ED%8B%B0_%EB%A9%94%EC%84%9C%EB%93%9C/)

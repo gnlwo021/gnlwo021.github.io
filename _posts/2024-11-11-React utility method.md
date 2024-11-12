@@ -50,7 +50,7 @@ const numbers = [1, 2, 3];
 const doubled = numbers.map(n => n * 2);
 console.log(doubled); // [2, 4, 6]
 ```
-> `map`은 리액트에서 많은 비중을 차지하는 메서드입니다. 더 자세한 예시를 통해 알아보겠습니다.
+<blockquote class="prompt-tip"><code class="highlighter-rouge">map</code>은 리액트에서 많은 비중을 차지하는 메서드입니다. 더 자세한 예시를 통해 알아보겠습니다.</blockquote>
 
 + `map` 예시
 ```javascript
@@ -203,3 +203,4 @@ console.log(float); // 3.14
 
 ## 리액트 기초 시리즈
 ---
+[[React] 리액트의 핵심 Hook](https://gnlwo021.github.io/posts/%EB%A6%AC%EC%95%A1%ED%8A%B8_Hooks/)
