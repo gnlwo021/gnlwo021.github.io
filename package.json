@@ -99,7 +99,7 @@
         }
       ],
       "media-feature-range-notation": "prefix",
-      "scss/dollar-variable-pattern": "^--",
+      "scss/dollar-variable-pattern": null,
       "selector-class-pattern": null
     }
   },
