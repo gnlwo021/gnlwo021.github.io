@@ -31,8 +31,6 @@
     "@babel/core": "^7.25.2",
     "@babel/plugin-transform-class-properties": "^7.25.4",
     "@babel/preset-env": "^7.25.4",
-    "@commitlint/cli": "^19.5.0",
-    "@commitlint/config-conventional": "^19.5.0",
     "@rollup/plugin-babel": "^6.0.4",
     "@rollup/plugin-node-resolve": "^15.2.3",
     "@rollup/plugin-terser": "^0.4.4",
@@ -55,17 +53,6 @@
     "> 0.2%",
     "not dead"
   ],
-  "commitlint": {
-    "extends": [
-      "@commitlint/config-conventional"
-    ],
-    "rules": {
-      "body-max-line-length": [
-        0,
-        "always"
-      ]
-    }
-  },
   "stylelint": {
     "extends": "stylelint-config-standard-scss",
     "rules": {
