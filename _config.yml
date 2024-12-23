@@ -225,8 +225,5 @@ jekyll-archives:
     tag: /tags/:name/
     category: /categories/:name/
 
-# plugins: 
-#   - jekyll-paginate
-#   - jekyll-gist
-#   - jekyll-include-cache
-#   - jekyll-sitemap
+plugins:
+  - jekyll-sitemap
